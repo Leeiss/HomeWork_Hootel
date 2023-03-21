@@ -37,7 +37,7 @@ namespace HomeWork_Hotel
             try
             {
                 File.AppendAllText(@".\..\..\..\Info.txt", "\n");
-                File.AppendAllText(@".\..\..\..\Info.txt", name.Text + "|" + status.SelectedItem + "|" + number.Text + "|" + date1.Text + "|" + date2.Text + "|" + days.Text + "|" + money.Text + "|" + pets.Text + "|" + ".\\..\\..\\..\\Resources\\"+Image + "|" + date3.Text);
+                File.AppendAllText(@".\..\..\..\Info.txt", name.Text + "|" + status.SelectedItem + "|" + number.Text + "|" + date1.Text + "|" + date2.Text + "|" + days.Text + "|" + money.Text + "|" + pets.Text + "|" + ".\\..\\..\\..\\Resources\\" + Image + "|" + date3.Text);
                 string[] lines = File.ReadAllLines(fileName);
                 string[] readText = File.ReadAllLines(fileName);
                 using (StreamWriter writer = new StreamWriter(fileName))
